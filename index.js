@@ -22,5 +22,8 @@ app.post("/getjs", async (request, response) => {
     response.json({ bloque:"no se envio el codigo pio"});
   }
 });
+app.get("/", async (request, response) => {
+  response.send("hola mundo");
+});
 
 app.listen("8010");
