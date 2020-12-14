@@ -30,12 +30,6 @@ class Controller
             header("LOCATION:" . constant('URL') ."login");
         }
     }
-    public function setimg()
-    {
-        if (strcmp($_SESSION['usuario'][0]->imagen, "ninguna") == 0) {
-            $_SESSION['usuario'][0]->imagen = "def.jpg";
-        }
-    }
     public function redireccion($page, $funcion = null)
     {
         if ($funcion != null) {
