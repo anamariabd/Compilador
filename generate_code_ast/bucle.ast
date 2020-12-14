@@ -1,0 +1,87 @@
+[
+  {
+    "type": "llamado_funcion",
+    "fun_nombre": {
+      "type": "identificador",
+      "value": "buclepio",
+      "text": "buclepio",
+      "offset": 0,
+      "lineBreaks": 0,
+      "line": 1,
+      "col": 1
+    },
+    "argumentos": [
+      {
+        "type": "llamado_funcion",
+        "fun_nombre": {
+          "type": "identificador",
+          "value": "rangopio",
+          "text": "rangopio",
+          "offset": 9,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 10
+        },
+        "argumentos": [
+          {
+            "type": "numerico",
+            "value": "1",
+            "text": "1",
+            "offset": 18,
+            "lineBreaks": 0,
+            "line": 1,
+            "col": 19
+          },
+          {
+            "type": "numerico",
+            "value": "10",
+            "text": "10",
+            "offset": 20,
+            "lineBreaks": 0,
+            "line": 1,
+            "col": 21
+          }
+        ]
+      },
+      {
+        "type": "lambda",
+        "parametro": [
+          {
+            "type": "identificador",
+            "value": "numero",
+            "text": "numero",
+            "offset": 34,
+            "lineBreaks": 0,
+            "line": 2,
+            "col": 10
+          }
+        ],
+        "cuerpo": [
+          {
+            "type": "llamado_funcion",
+            "fun_nombre": {
+              "type": "identificador",
+              "value": "pioimprecion",
+              "text": "pioimprecion",
+              "offset": 58,
+              "lineBreaks": 0,
+              "line": 3,
+              "col": 11
+            },
+            "argumentos": [
+              {
+                "type": "identificador",
+                "value": "numero",
+                "text": "numero",
+                "offset": 71,
+                "lineBreaks": 0,
+                "line": 3,
+                "col": 24
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

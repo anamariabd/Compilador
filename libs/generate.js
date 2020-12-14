@@ -1,18 +1,7 @@
-const fs = require("mz/fs");
-
-async function generarArchivoJS(archivo) {
-  const filename = archivo;
-  if (!filename) {
-    console.log("dame un archivo .ast");
-    return;
-  }
-  const astjson = (await fs.readFile("./generate_code_ast/"+filename)).toString();
-  const defFunciones =  (await fs.readFile("./libs/defFunciones.js")).toString();
-  const declaraciones = JSON.parse(astjson);
-  const jscode = generatejs(declaraciones) + "\n" + defFunciones;
-  const outputFilename = filename.replace(".ast", ".js");
-  await fs.writeFile("./generate_code_js/"+outputFilename, jscode);
-  console.log(`se escribio ${outputFilename}`);
+async function generarArchivoJS(codigoast) {
+  const declaraciones = JSON.parse(codigoast);
+  const jscode = generatejs(declaraciones) + "\n";
+  return jscode;
 }
 
 function generatejs(declaraciones) {

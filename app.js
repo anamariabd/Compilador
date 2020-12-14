@@ -1,9 +1,7 @@
 const parser = require("./libs/parser.js");
-const generate = require("./libs/generate.js");
 
-async function main(archivo) {
-  await parser(archivo + ".pio");
-  await generate(archivo + ".ast");
+async function convertirPioToJs(codigo) {
+  return await parser(codigo);
 }
 
-main("comentarios").catch(err => console.log(err.stack))
+module.exports = convertirPioToJs;

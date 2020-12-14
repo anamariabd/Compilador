@@ -1,0 +1,7 @@
+buclepio(rangopio(1 10)
+        (numero) => {
+          pioimprecion(numero)
+        }
+)
+
+
