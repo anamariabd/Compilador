@@ -1,0 +1,21 @@
+Género	Unisex
+Material del marco	Aluminio
+Número de cambios	21
+Tipo de freno	Disco mecánico
+Suspensión	Delantera
+Rin	29 pulgadas
+Marca	Kawasaki
+Modelo	FORTI 1929FG2
+Descripción de freno	Freno de Disco YK-6
+Tipo	Bicicletas de montaña
+Descripción de marco	Aluminio
+Cambio delantero	Shimano TZ500
+Cambio trasero	Shimano TZ500
+Biela	Acero
+Manubrio	Aluminio
+Horquilla	Acero
+Pedal	Plástico
+Asiento	Ergonómico Antiprostático
+Neumáticos	Wanda 29x2.1
+Peso del producto	16 kg
+precio $ 1.499.990

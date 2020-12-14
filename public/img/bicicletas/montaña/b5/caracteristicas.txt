@@ -1,0 +1,21 @@
+Género	Unisex
+Material del marco	Aluminio
+Número de cambios	10
+Tipo de freno	Disco hidráulico
+Suspensión	Delantera
+Rin	29 pulgadas
+Marca	Kawasaki
+Modelo	DOMINAT 19290D1
+Descripción de freno	Freno Hidráulico Nutt
+Tipo	Bicicletas de montaña
+Descripción de marco	Aluminio
+Cambio delantero	Skilful 10
+Cambio trasero	Skilful 10
+Biela	Aluminio
+Manubrio	Aluminio
+Horquilla	Aluminio
+Pedal	Plástico
+Asiento	Ergonómico Antiprostático
+Neumáticos	Kenda 29x2.2
+Peso del producto	16 kg
+precio $ 1.799.990

@@ -1,0 +1,33 @@
+Género	Unisex
+Material del marco	Aluminio
+Número de cambios	16
+Tipo de freno	U-brake
+Suspensión	Sin suspensión
+Rin	28 pulgadas
+Marca	Jeep
+Modelo	MILANO 1.V21
+Descripción de freno	U-brake
+Tipo	Bicicletas de ruta
+Descripción de marco	Marco de aluminio 700C x 52 cm
+Cambio delantero	Shimano Turney
+Cambio trasero	Shimano Turkey
+Biela	Acero
+Descripción de biela	34 x 50T Disco de acero
+Piñón	Acero
+Descripción de piñon	Acero
+Manubrio	Aluminio
+Descripción de manubrio	23.8 x 420 mm - Centro: 31.8
+Descripción de suspensión	Sin suspensión
+Recorrido de la suspensión delantera	No aplica
+Horquilla	Cabezal aluminio
+Pedal	Acero
+Asiento	Asiento de carrera
+Neumáticos	No aplica
+Llantas	Kenda
+Rayos	Acero
+Peso del producto	9.5 kg
+Cubierta	No aplica
+Hecho en	China
+Garantía del proveedor	1 año
+Requiere armado	Sí
+precio $ 1.299.990  
