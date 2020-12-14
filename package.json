@@ -5,7 +5,9 @@
   "description": "",
   "main": "lexer.js",
   "scripts": {
+    "start": "node index.js",
     "parser": "nearleyc libs/pio.ne -o libs/pio.js"
+
   },
   "keywords": [],
   "author": "",
