@@ -1,16 +1,13 @@
 {
-  "autor": "ernesto felipe polo prada",
   "name": "piolenguague",
   "version": "1.0.0",
-  "description": "",
-  "main": "lexer.js",
+  "description": "backend para pio lenguaje",
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "parser": "nearleyc libs/pio.ne -o libs/pio.js"
-
+    "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ernesto felipe polo prada",
   "license": "ISC",
   "dependencies": {
     "async": "^3.2.0",
@@ -19,6 +16,7 @@
     "moo": "^0.5.1",
     "mz": "^2.7.0",
     "nearley": "^2.20.1",
+    "nodemon": "^2.0.6",
     "request": "^2.88.2"
   }
 }
