@@ -1,0 +1,18 @@
+hola ?> (variable) => { pioimpresion(concadenacionpio("hola" "mundo pollo" variable))
+}
+
+// esto es un comentario
+
+hagaloUsted ?> () => {
+  pioimpresion("hagalo nojoda")
+}
+
+hagaloUsted()
+
+hola("pio pio")
+
+comidas ?> polloseparar("pollo maiz quezo peperoni mondongo")
+
+porcadapollo(comidas (comida) => 
+  pioimpresion("hola " comida)
+)

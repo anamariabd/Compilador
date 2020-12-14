@@ -1,0 +1,11 @@
+f ?> () => 1
+g ?> (a b) => add(pew(2 a) b)
+h ?> (x y) => {
+  pioimprecion("x = " x)
+  pioimprecion("y = " y)
+  g(x y)
+}
+resultado ?> h(3 4)
+pioimprecion("RESULTADO ?> " resultado)
+pioimprecion("f =" f())
+pioimprecion("g(f f) =" g(f() f()))

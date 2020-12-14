@@ -1,0 +1,5 @@
+name ?> "jack"
+age ?> 4
+color ?> "yellow"
+sum ?> pollitoelevado(32 4)
+pioimprecion(sum)

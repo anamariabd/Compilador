@@ -1,0 +1,15 @@
+fib ?> (n) =>
+    sipollito(pollitosiguales(n 1)
+        () => 1
+        () =>
+            sipollito(pollitosiguales(n 2)
+                () => 1
+                () =>
+                    sumapollitos(
+                        fib(restarpollitos(n 1))
+                        fib(restarpollitos(n 2))
+                    )
+            )
+        )
+
+pioimprecion(fib(7))

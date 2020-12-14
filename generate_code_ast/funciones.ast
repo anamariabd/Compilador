@@ -1,0 +1,429 @@
+[
+  {
+    "type": "var_asignacion",
+    "var_nombre": {
+      "type": "identificador",
+      "value": "f",
+      "text": "f",
+      "offset": 0,
+      "lineBreaks": 0,
+      "line": 1,
+      "col": 1
+    },
+    "valor": {
+      "type": "lambda",
+      "parametro": [],
+      "cuerpo": [
+        {
+          "type": "numerico",
+          "value": "1",
+          "text": "1",
+          "offset": 11,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 12
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_asignacion",
+    "var_nombre": {
+      "type": "identificador",
+      "value": "g",
+      "text": "g",
+      "offset": 14,
+      "lineBreaks": 0,
+      "line": 2,
+      "col": 1
+    },
+    "valor": {
+      "type": "lambda",
+      "parametro": [
+        {
+          "type": "identificador",
+          "value": "a",
+          "text": "a",
+          "offset": 20,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 7
+        },
+        {
+          "type": "identificador",
+          "value": "b",
+          "text": "b",
+          "offset": 22,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 9
+        }
+      ],
+      "cuerpo": [
+        {
+          "type": "llamado_funcion",
+          "fun_nombre": {
+            "type": "identificador",
+            "value": "add",
+            "text": "add",
+            "offset": 28,
+            "lineBreaks": 0,
+            "line": 2,
+            "col": 15
+          },
+          "argumentos": [
+            {
+              "type": "llamado_funcion",
+              "fun_nombre": {
+                "type": "identificador",
+                "value": "pew",
+                "text": "pew",
+                "offset": 32,
+                "lineBreaks": 0,
+                "line": 2,
+                "col": 19
+              },
+              "argumentos": [
+                {
+                  "type": "numerico",
+                  "value": "2",
+                  "text": "2",
+                  "offset": 36,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 23
+                },
+                {
+                  "type": "identificador",
+                  "value": "a",
+                  "text": "a",
+                  "offset": 38,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 25
+                }
+              ]
+            },
+            {
+              "type": "identificador",
+              "value": "b",
+              "text": "b",
+              "offset": 41,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 28
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_asignacion",
+    "var_nombre": {
+      "type": "identificador",
+      "value": "h",
+      "text": "h",
+      "offset": 45,
+      "lineBreaks": 0,
+      "line": 3,
+      "col": 1
+    },
+    "valor": {
+      "type": "lambda",
+      "parametro": [
+        {
+          "type": "identificador",
+          "value": "x",
+          "text": "x",
+          "offset": 51,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 7
+        },
+        {
+          "type": "identificador",
+          "value": "y",
+          "text": "y",
+          "offset": 53,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 9
+        }
+      ],
+      "cuerpo": [
+        {
+          "type": "llamado_funcion",
+          "fun_nombre": {
+            "type": "identificador",
+            "value": "pioimprecion",
+            "text": "pioimprecion",
+            "offset": 64,
+            "lineBreaks": 0,
+            "line": 4,
+            "col": 3
+          },
+          "argumentos": [
+            {
+              "type": "cadena",
+              "value": "\"x = \"",
+              "text": "\"x = \"",
+              "offset": 77,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 16
+            },
+            {
+              "type": "identificador",
+              "value": "x",
+              "text": "x",
+              "offset": 84,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 23
+            }
+          ]
+        },
+        {
+          "type": "llamado_funcion",
+          "fun_nombre": {
+            "type": "identificador",
+            "value": "pioimprecion",
+            "text": "pioimprecion",
+            "offset": 90,
+            "lineBreaks": 0,
+            "line": 5,
+            "col": 3
+          },
+          "argumentos": [
+            {
+              "type": "cadena",
+              "value": "\"y = \"",
+              "text": "\"y = \"",
+              "offset": 103,
+              "lineBreaks": 0,
+              "line": 5,
+              "col": 16
+            },
+            {
+              "type": "identificador",
+              "value": "y",
+              "text": "y",
+              "offset": 110,
+              "lineBreaks": 0,
+              "line": 5,
+              "col": 23
+            }
+          ]
+        },
+        {
+          "type": "llamado_funcion",
+          "fun_nombre": {
+            "type": "identificador",
+            "value": "g",
+            "text": "g",
+            "offset": 116,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 3
+          },
+          "argumentos": [
+            {
+              "type": "identificador",
+              "value": "x",
+              "text": "x",
+              "offset": 118,
+              "lineBreaks": 0,
+              "line": 6,
+              "col": 5
+            },
+            {
+              "type": "identificador",
+              "value": "y",
+              "text": "y",
+              "offset": 120,
+              "lineBreaks": 0,
+              "line": 6,
+              "col": 7
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_asignacion",
+    "var_nombre": {
+      "type": "identificador",
+      "value": "resultado",
+      "text": "resultado",
+      "offset": 127,
+      "lineBreaks": 0,
+      "line": 8,
+      "col": 1
+    },
+    "valor": {
+      "type": "llamado_funcion",
+      "fun_nombre": {
+        "type": "identificador",
+        "value": "h",
+        "text": "h",
+        "offset": 140,
+        "lineBreaks": 0,
+        "line": 8,
+        "col": 14
+      },
+      "argumentos": [
+        {
+          "type": "numerico",
+          "value": "3",
+          "text": "3",
+          "offset": 142,
+          "lineBreaks": 0,
+          "line": 8,
+          "col": 16
+        },
+        {
+          "type": "numerico",
+          "value": "4",
+          "text": "4",
+          "offset": 144,
+          "lineBreaks": 0,
+          "line": 8,
+          "col": 18
+        }
+      ]
+    }
+  },
+  {
+    "type": "llamado_funcion",
+    "fun_nombre": {
+      "type": "identificador",
+      "value": "pioimprecion",
+      "text": "pioimprecion",
+      "offset": 148,
+      "lineBreaks": 0,
+      "line": 9,
+      "col": 1
+    },
+    "argumentos": [
+      {
+        "type": "cadena",
+        "value": "\"RESULTADO ?> \"",
+        "text": "\"RESULTADO ?> \"",
+        "offset": 161,
+        "lineBreaks": 0,
+        "line": 9,
+        "col": 14
+      },
+      {
+        "type": "identificador",
+        "value": "resultado",
+        "text": "resultado",
+        "offset": 177,
+        "lineBreaks": 0,
+        "line": 9,
+        "col": 30
+      }
+    ]
+  },
+  {
+    "type": "llamado_funcion",
+    "fun_nombre": {
+      "type": "identificador",
+      "value": "pioimprecion",
+      "text": "pioimprecion",
+      "offset": 189,
+      "lineBreaks": 0,
+      "line": 10,
+      "col": 1
+    },
+    "argumentos": [
+      {
+        "type": "cadena",
+        "value": "\"f =\"",
+        "text": "\"f =\"",
+        "offset": 202,
+        "lineBreaks": 0,
+        "line": 10,
+        "col": 14
+      },
+      {
+        "type": "llamado_funcion",
+        "fun_nombre": {
+          "type": "identificador",
+          "value": "f",
+          "text": "f",
+          "offset": 208,
+          "lineBreaks": 0,
+          "line": 10,
+          "col": 20
+        },
+        "argumentos": []
+      }
+    ]
+  },
+  {
+    "type": "llamado_funcion",
+    "fun_nombre": {
+      "type": "identificador",
+      "value": "pioimprecion",
+      "text": "pioimprecion",
+      "offset": 214,
+      "lineBreaks": 0,
+      "line": 11,
+      "col": 1
+    },
+    "argumentos": [
+      {
+        "type": "cadena",
+        "value": "\"g(f f) =\"",
+        "text": "\"g(f f) =\"",
+        "offset": 227,
+        "lineBreaks": 0,
+        "line": 11,
+        "col": 14
+      },
+      {
+        "type": "llamado_funcion",
+        "fun_nombre": {
+          "type": "identificador",
+          "value": "g",
+          "text": "g",
+          "offset": 238,
+          "lineBreaks": 0,
+          "line": 11,
+          "col": 25
+        },
+        "argumentos": [
+          {
+            "type": "llamado_funcion",
+            "fun_nombre": {
+              "type": "identificador",
+              "value": "f",
+              "text": "f",
+              "offset": 240,
+              "lineBreaks": 0,
+              "line": 11,
+              "col": 27
+            },
+            "argumentos": []
+          },
+          {
+            "type": "llamado_funcion",
+            "fun_nombre": {
+              "type": "identificador",
+              "value": "f",
+              "text": "f",
+              "offset": 244,
+              "lineBreaks": 0,
+              "line": 11,
+              "col": 31
+            },
+            "argumentos": []
+          }
+        ]
+      }
+    ]
+  }
+]
