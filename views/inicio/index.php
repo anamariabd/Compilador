@@ -124,14 +124,20 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">Ejemplos de codigo pio:</h6>
+                        <?php
+                            $compartidos = $this->compartidos;
+                            foreach ($compartidos as $compartido) :
+                        ?>
+                        <?php
+                        $pos = strpos($compartido->nombre, "ejemplo");
+                        if (!($pos === false) && $compartido->usuarios_idusuarios == 1) :
+                        ?>
+                        <a class="collapse-item" href="inicio/cargar/<?php
+                            echo $compartido->idpioscripts;
+                            ?>"><?php echo $compartido->nombre . ".pio"?></a>
+                        <?php endif; ?>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </li>
@@ -230,7 +236,7 @@
                                             if (isset($this->datos->nombre)) {
                                                 echo $this->datos->nombre . ".pio";
                                             } else {
-                                                echo 'index.pio';
+                                                echo 'index';
                                             }
                                         ?>">
                                     </h6>
@@ -246,6 +252,7 @@
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Ejecutar
                                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
@@ -265,7 +272,8 @@
                                 <!-- Card Body -->
                                 <div class="card-body p-0">
                                     <div class="chart-area form-group">
-                                        <textarea name="codigo" id="codigo" class="form-control" style="height: 100%;">
+                                        <textarea name="codigo" id="codigo" class="form-control p-0"
+                                            style="height: 100%; text-align: left !important;">
                                         <?php
                                             if (isset($this->datos->codigopio)) {
                                                 echo $this->datos->codigopio;
@@ -300,11 +308,11 @@
 
                         <!-- Content Column -->
                         <div class="col-lg-6 mb-4">
-
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Otros Lenguajes</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Pio lenguaje comparado con otros
+                                        Lenguajes en rapidez</h6>
                                 </div>
                                 <div class="card-body">
                                     <h4 class="small font-weight-bold">PHP <span class="float-right">20%</span></h4>
@@ -335,6 +343,27 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Ciclo Pio (FUNCION: buclepio())</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                                            src="img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <p>Para poder hacer ciclos en lenguaje pio se debe llamar a la funcion
+                                        <strong>buclepio</strong>() y pasarle la funcion <strong>rangopio()</strong>
+                                        <Strong>MIRA LA SECCION FUNCIONES CORE PARA SABER MAS.</Strong> <br>
+                                    </p>
+                                    <p><strong>EJEMPLO:</strong> <br> buclepio(rangopio(1 10) <br>
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp(numero) => { <br>
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp pioimprecion(" el numero es " numero) <br>
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp }
+                                        <br>) <br> <strong>Entonces:</strong> <br> la segunda funcion es a tu criterio y recivira el index actual en el que va el siclo para que hagas tus operaciones. <br> Para conocer mas mira la seccion <strong>EJEMPLOS PIO</strong> o codigos compartidos por la comunidad en <strong>DE LA COMUNIDAD</strong></p>
+
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-lg-6 mb-4">
@@ -342,33 +371,131 @@
                             <!-- Illustrations -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Acerca De Pio Lenguaje!</h6>
                                 </div>
                                 <div class="card-body">
                                     <div class="text-center">
                                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
                                             src="img/undraw_posting_photo.svg" alt="">
                                     </div>
-                                    <p>Add some quality, svg illustrations to your project courtesy of <a
-                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
-                                        constantly updated collection of beautiful svg images that you can use
-                                        completely free and without attribution!</p>
-                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
-                                        unDraw &rarr;</a>
+                                    <p>El lenguaje <strong>Pio</strong> es un homenaje a la tematica de pollos porque
+                                        solamente nos
+                                        parecio divertido hacerlo asi, te daras cuenta que su sintaxis hace ilusion a
+                                        ellos y sus tipo de archivo son .pio en honor a su sonido. <br> <br>
+
+                                        si quieres conocer el codigo fuente visita:</p>
+                                    <a target="_blank" rel="nofollow"
+                                        href="https://github.com/FelipePolo/piolenguaje">PioLenguaje.com/developer
+                                        &rarr;</a>
                                 </div>
                             </div>
 
                             <!-- Approach -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Operadores pio</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                        CSS bloat and poor page performance. Custom CSS classes are used to create
-                                        custom components and custom utility classes.</p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
+                                    <p>asignacion "=" -> "?>"</p>
+                                    <p>igualdad "a == b" -> "pollitosiguales(a b)"</p>
+                                    <p>suma "a + b" -> "sumapollitos(a b)"</p>
+                                    <p>resta "a - b" -> "restarpollitos(a b)"</p>
+                                    <p>multiplicacion "a * b" -> "multiplicarpollitos(a b)"</p>
+                                    <p>divicion "a / b" -> "dividirpollitos(a b)"</p>
+                                    <p>raiz "sqrt(a)" -> "pollitoraiz(a)"</p>
+                                    <p>potencia "pow(b e)" -> "pollitoelevado(b e)"</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Sintaxis Del Lenguaje Pio</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p><strong>En el lenguaje pio debes seguir estas reglas para tener una sintaxis
+                                            correcta y que funcionen tus codigos pio!</strong></p>
+                                    <p>1) Deja de usar ";" en PIO las lineas de codigo terminan con un salto de linea,
+                                        osea precionando la tecla <strong>ENTER</strong></p>
+                                    <p>2) Si creas Funciones la ultima linea de Codigo de tu funcion sera por defecto un
+                                        <strong>RETURN</strong></p>
+                                    <p><strong>EJEMPLO:</strong> <br> funcion ?> () => {
+                                        sumapollitos(1 2)
+                                        } <br> <strong>ES IGUAL A DECIR:</strong> <br> funcion ?> () => {
+                                        RETURN sumapollitos(1 2)
+                                        }</p>
+                                    <p>3) las cadenas van entre " "</p>
+                                    <p><strong>EJEMPLO:</strong> <br> piovariable ?> "Hola Mundo" <br>
+                                        <strong>Incorrecto es:</strong> <br> piovariable ?> hola mundo</p>
+
+                                    <p>4) Los tipos de datos que soporta el lenguaje PIO son <strong>CADENAS</strong> y
+                                        <strong>ENTEROS</strong></p>
+                                    <p>5) Los parametros a las funciones se pasan separados por  <strong>ESPACIOS</strong> y no por
+                                        <strong>COMAS</strong> como normalmente se conoce</p>
+                                    <p>6) Las variables son <strong>ALFANUMERICAS</strong>:</p>
+                                    <p><strong>EJEMPLO:</strong> <br> piovariable ?> 1 <br> piovariable2 ?> "pollitos en
+                                        fuga"
+                                        <br> <strong>Incorrecto es:</strong> <br> piovariable&%$ ?> "hola mundo pio"
+                                    </p>
+
+                                    <p>Si quieres aprender a programar en lenguaje pio mira los ejemplos en la seccion
+                                        <strong>Ejemplos Pio</strong></p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Funciones Core</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                                            src="img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <p><strong>rangopio(a b):</strong> <br>
+                                    Esta funcion recive dos enteros y retorna un array con el tamaño = b - 1 elementos</p>
+
+                                    <p><strong>pioimprecion(cadena1 cadena2 cadenaN):</strong> <br>
+                                    Esta funcion recive N variables y las imprime en la consola</p>
+                                    <a target="_blank" rel="nofollow"
+                                        href="https://github.com/FelipePolo/piolenguaje">PioLenguaje.com/developers
+                                        &rarr;</a>
+                                    <p>Desplazate hacia abajo para mirar todas sus caracteristicas</p>
+                                </div>
+                            </div>
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Condicionales En Pio</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>El condicional <strong>sipollito()</strong> recive 3 funciones la primera es la <strong>CONDICION</strong> la segunda es el <strong>PRIMER CASO</strong> y la tercera es el <strong>CASO CONTRARIO</strong></p>
+
+                                    <p><strong>EJEMPLO:</strong> <br> 
+                                    condicion ?> () => true <br>
+                                    primercaso ?> () => pioimprecion("la condicion fue verdadera") <br>
+                                    casocontrario ?> () => { <br>
+                                        &nbsp &nbsp &nbsp &nbsp pioimprecion("la condicion fue falsa")
+                                    <br> } <br>
+                                    sipollito(condicion primercaso casocontrario) <br>
+
+                                    <strong>SE IMPRIME: "la condicion fue verdadera"</strong>
+
+                                 </p>
                                 </div>
                             </div>
 
@@ -434,7 +561,7 @@
 
     <script>
         $("#ejecutar").click(async () => {
-            const codigopio = $("#codigo").val();
+            const codigopio = $("#codigo").val().replace("                                        ", "");
             const nombre = $("#nombre").val().replace(".pio", "");
             let bloque = await cargar(codigopio);
             console.log(bloque);
@@ -455,7 +582,7 @@
         });
 
         const cargar = async (codigopio) => {
-            const req = await fetch('http://localhost:8010/getjs', {
+            const req = await fetch('https://convertidor-pio-js.herokuapp.com/getjs', {
                 method: 'POST',
                 mode: 'cors',
                 cache: 'no-cache',
@@ -509,7 +636,7 @@
         }
 
         function $if(cond, consecuencia, alternativa) {
-            if (cond) {
+            if (cond()) {
                 return consecuencia();
             } else {
                 return alternativa();
@@ -530,12 +657,6 @@
 
         function buclepio(array, funcion) {
             array.forEach(funcion);
-        }
-
-        function bluclepiodo(condicion, ejecucion) {
-            do {
-                ejecucion();
-            } while (condicion());
         }
     </script>
 
